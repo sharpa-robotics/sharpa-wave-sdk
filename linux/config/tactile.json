@@ -1,0 +1,55 @@
+{
+  "config_dir": "",
+  "none": {
+    "left": {
+      "model_path": {},
+      "allowed_pack_loss": 0,
+      "buffer_size": 2,
+      "batch_size": 5,
+      "num_worker": 3,
+      "fps": 30,
+      "infer_from_device": true,
+      "decode_jpeg": false,
+      "update_firmware": false
+    },
+    "right": {
+      "model_path": {},
+      "allowed_pack_loss": 0,
+      "buffer_size": 2,
+      "batch_size": 5,
+      "num_worker": 3,
+      "fps": 30,
+      "infer_from_device": true,
+      "decode_jpeg": false,
+      "update_firmware": false
+    }
+  },
+  "cuda": {
+    "left": {
+      "model_path": {
+        "models/DEV2pin_400_de7d860c.onnx": [5, 6, 7, 8, 9]
+      },
+      "allowed_pack_loss": 0,
+      "buffer_size": 2,
+      "batch_size": 5,
+      "num_worker": 3,
+      "fps": 180,
+      "infer_from_device": false,
+      "decode_jpeg": true,
+      "update_firmware": false
+    },
+    "right": {
+      "model_path": {
+        "models/DEV2pin_400_de7d860c.onnx": [0, 1, 2, 3, 4]
+      },
+      "allowed_pack_loss": 0,
+      "buffer_size": 2,
+      "batch_size": 5,
+      "num_worker": 3,
+      "fps": 180,
+      "infer_from_device": false,
+      "decode_jpeg": true,
+      "update_firmware": false
+    }
+  }
+}
