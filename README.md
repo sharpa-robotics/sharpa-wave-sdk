@@ -21,11 +21,8 @@ More platforms (Windows / macOS) will be added in the future.
 ```
 sharpa-wave-sdk/
 ├── README.md
-└── linux/
-    └── README.md
-```
 
-- `linux/` – Linux-specific SDK usage, installation, and examples
+```
 
 ---
 
