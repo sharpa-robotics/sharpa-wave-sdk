@@ -1,8 +1,5 @@
 # Sharpa Wave SDK
-
-Internal SDK for the Sharpa Wave system.
-
-This SDK provides libraries and tools to interact with Sharpa Wave devices, including core functionalities and Python/C++ interfaces.
+Sharpa Wave SDK provides libraries and APIs for integrating Sharpa Wave into custom applications and robotics software stacks.
 
 ---
 
