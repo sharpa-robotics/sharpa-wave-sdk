@@ -6,17 +6,17 @@ This document covers **x86_64 (amd64)** and **ARM64 (aarch64)**. On disk, the SD
 
 ---
 
-## Download
+## 📥 Download
 
 Download the latest package from Releases:
 
-[https://github.com/sharpa-robotics/sharpa-wave-sdk/releases](https://github.com/sharpa-robotics/sharpa-wave-sdk/releases)
+👉[https://github.com/sharpa-robotics/sharpa-wave-sdk/releases](https://github.com/sharpa-robotics/sharpa-wave-sdk/releases)
 
 Choose the build that matches your **CPU architecture**: **`.deb` (amd64)** for typical PC Ubuntu/Debian, **`.zip` (ARM64 / aarch64)** for embedded or board images (exact filename follows the release).
 
 ---
 
-## Architectures at a glance
+## 📦 Architectures at a glance
 
 | Arch            | Linux distribution on Releases              | Python extension name pattern (typical)        |
 | --------------- | ------------------------------------------- | ---------------------------------------------- |
@@ -29,7 +29,7 @@ On the device, layout under `/opt/sharpa-wave-sdk/` is the same; only the `.so` 
 
 ---
 
-## Installation (Linux)
+## 🚀 Installation (Linux)
 
 ### x86_64 (amd64) — `.deb` (Ubuntu / Debian)
 
@@ -58,7 +58,7 @@ Adjust the zip filename to match your release; if the archive contains a single 
 
 ---
 
-## Installed layout (`/opt/sharpa-wave-sdk`)
+## 💼 Installed layout (`/opt/sharpa-wave-sdk`)
 
 After installation, files are placed as follows. **Use the on-disk paths under `/opt/sharpa-wave-sdk/`**; you do not need to mirror a local `dist/linux/` or `dist/arm/` tree on the target. **x86_64:** the current **`.deb`** installs here and removes legacy `/usr/...` trees on upgrade. **ARM64:** unpack the **`.zip`** to this path yourself (there is no `dpkg` metadata for the zip bundle).
 
@@ -79,15 +79,14 @@ After installation, files are placed as follows. **Use the on-disk paths under `
   `sys.path.insert(0, '/opt/sharpa-wave-sdk/python')`  
   so the `sharpa` extension that matches your **`python3` major.minor** (**3.10 / 3.11 / 3.12 only**) and **CPU arch** is loaded.
 
----
 
-## ARM64: what is in the `.zip`
+### ARM64: what is in the `.zip`
 
 The **ARM64 release artifact is a `.zip`**, not a Debian package. It is built for embedded / board bring-up and mirrors the same **`/opt/sharpa-wave-sdk/`** layout as the PC install when unpacked to that directory. Check the archive listing for your release: some builds may **omit** the Python extension or ship extra tooling—if `python/sharpa/*.so` for your Python minor is missing, obtain a build that includes it or build on the **target** `aarch64` host when your product requires Python.
 
 ---
 
-## Quick start
+## ▶️ Quick start
 
 ### C++ projects
 
@@ -105,7 +104,7 @@ The **ARM64 release artifact is a `.zip`**, not a Debian package. It is built fo
 
 ---
 
-## Samples and further reading
+## 📖 Samples and further reading
 
 - **C++** — `/opt/sharpa-wave-sdk/sample/c++/` (e.g. `Makefile`, `sharpa_wave_example.cc`, tactile examples). On ARM, use makefiles or flags appropriate for `aarch64` if the sample differentiates.
 - **Python** — `/opt/sharpa-wave-sdk/sample/python/` and subfolders; see each `requirements.txt`.
@@ -115,7 +114,7 @@ For build steps, tactile framerate notes, and hands-on details, see the **develo
 
 ---
 
-## Update
+## 🔄 Update
 
 ### x86_64 (`.deb`)
 
@@ -130,7 +129,7 @@ Replace the tree under `/opt/sharpa-wave-sdk/` with the contents of the newer **
 
 ---
 
-## Uninstall
+## ❌ Uninstall
 
 ### x86_64 (installed from `.deb`)
 
@@ -150,7 +149,7 @@ Remove any manual **`/etc/ld.so.conf.d/sharpa-wave-sdk.conf`** (and run **`sudo 
 
 ---
 
-## Requirements
+## ⚠️ Requirements
 
 - **OS:** Ubuntu 20.04 / 22.04 (or as stated in the release notes for your build).
 - **Architecture**
@@ -161,12 +160,12 @@ Remove any manual **`/etc/ld.so.conf.d/sharpa-wave-sdk.conf`** (and run **`sudo 
 
 ---
 
-## Notes
+## 📌 Notes
 
 - Connect and authorize the device according to your deployment policy before use.
 
 ---
 
-## Support
+## 📞 Support
 
 For issues or product questions, contact **Sharpa Robotics** through your support channel or the address provided with your license or purchase.
